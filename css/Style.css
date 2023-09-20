@@ -47,6 +47,11 @@ h3 {
 .center p {
   margin-bottom: 50px;
 }
+.center__txt {
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .bouton {
   color: white;
@@ -63,30 +68,44 @@ h3 {
   padding: 35px 15px;
 }
 
-.operating-button {
+.button {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
-.button {
+.button__base {
+  display: flex;
+  align-items: center;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 15px 30px;
+  padding: 0px 30px;
 }
-.button i {
+.button__base i {
   color: grey;
+  margin-left: 61px;
 }
-.button .fa-store {
+.button__base i:hover {
   color: #9356DC;
 }
-
-.button-content {
+.button__base p {
+  margin: 2px 0px 0px 7px;
+  color: white;
+  font-weight: bold;
+}
+.button__base--content {
   text-decoration: none;
   color: black;
   font-weight: bolder;
-  padding: 80px;
+  padding: 15px 80px;
+}
+.button__base--numbers {
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 4px;
+  height: 25px;
+  width: 25px;
+  margin: -45px;
 }
 
 /******Restaurants******/
@@ -95,14 +114,14 @@ h3 {
   padding: 35px 25px;
 }
 
-.restaurants-cards {
+.restaurants-str {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
   gap: 20px;
 }
-.restaurants-cards img {
+.restaurants-str img {
   width: 400px;
   height: 200px;
   border-radius: 15px 15px 0px 0px;
@@ -110,21 +129,41 @@ h3 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
-
-.card-content {
+.card__img {
+  background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 400px;
+  height: 200px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.card__img p {
+  background-color: #99E2D0;
+  color: green;
+  display: flex;
+  justify-content: center;
+  margin: 15px 10px 0px 310px;
+  padding: 3px 0px 3px 0px;
+  font-weight: 900;
+}
+.card__content {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 0px 15px;
 }
-.card-content h2 {
+.card__content h2 {
   margin: 10px 0px 0px 0px;
 }
-.card-content p {
+.card__content p {
   margin: 0px 0px 10px 0px;
+}
+.card__favorite {
+  font-size: xx-large;
 }
 
 /******Footer******/

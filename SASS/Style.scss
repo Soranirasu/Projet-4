@@ -55,6 +55,12 @@ h3 {
     p {
         margin-bottom: 50px;
     }
+
+    &__txt {
+        width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .bouton {
@@ -72,33 +78,52 @@ h3 {
     padding: 35px 15px;
 }
 
-.operating-button {
+.button {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
 
-.button {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    padding: 15px 30px;
+    &__base {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 0px 30px;
 
-    i {
-        color: grey;
+        i {
+            color: grey;
+            margin-left: 61px;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        & p {
+            margin: 2px 0px 0px 7px;
+            color: white;
+            font-weight: bold;
+        }
     }
 
-    .fa-store {
-        color: $primary-color;
+    &__base--content {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        padding: 15px 80px;
+    }
+
+    &__base--numbers {
+        background-color: $primary-color;
+        border-radius: 100%;
+        padding: 4px;
+        height: 25px;
+        width: 25px;
+        margin: -45px;
     }
 }
 
-.button-content {
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    padding: 80px
-}
 
 
 /******Restaurants******/
@@ -107,7 +132,7 @@ h3 {
     padding: 35px 25px;
 }
 
-.restaurants-cards {
+.restaurants-str {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,23 +148,49 @@ h3 {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-}
 
-.card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0px 15px;
+    &__img {
+        background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        width: 400px;
+        height: 200px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
 
-    h2 {
-        margin: 10px 0px 0px 0px;
+        & p {
+            background-color: #99E2D0;
+            color: green;
+            display: flex;
+            justify-content: center;
+            margin: 15px 10px 0px 310px;
+            padding: 3px 0px 3px 0px;
+            font-weight: 900;
+        }
     }
 
-    p {
-        margin: 0px 0px 10px 0px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px;
+
+        h2 {
+            margin: 10px 0px 0px 0px;
+        }
+
+        p {
+            margin: 0px 0px 10px 0px;
+        }
     }
+
+    &__favorite {
+        font-size: xx-large;
+    }
+
 }
 
 
