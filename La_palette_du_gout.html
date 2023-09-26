@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/restaurants.css">
+    <link rel="stylesheet" href="./SASS/restaurants.scss">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/5c2c179bf3.js" crossorigin="anonymous"></script>
@@ -15,15 +18,69 @@
     <!--logo + bouton de retour vers la page d'accueil-->
     <header>
         <div class="top">
-            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
             <img src="Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/logo/ohmyfood.png"
                 alt="Logo de Oh My Food" class="logo">
         </div>
     </header>
 
+    <!--Main-->
     <main>
+        <section class="center"></section>
+
+        <!--Menus-->
+        <section class="card">
+            <div class="card__title">
+                <h1>La palette du goût</h1>
+                <button class="card__favorite">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+            <div class="card__str">
+                <div class="card__appetizers">
+                    <h2><span class="underline">ENTR</span>ÉES</h2>
+                    <div class="buttons">
+
+                    </div>
+                </div>
+
+                <div class="card__mains">
+                    <h2><span class="underline">PLAT</span>S</h2>
+                </div>
+
+                <div class="card__dessert">
+                    <h2><span class="underline">DESS</span>ERTS</h2>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
-    
+
+    <footer>
+        <h3>Ohmyfood</h3>
+        <ul class="footer-content">
+            <li>
+                <i class="fa-solid fa-utensils"></i>
+                <a href="#">Proposer un restaurant</a>
+
+            </li>
+            <li>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <a href="#">Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:ohmyfood@gmail.com">Contact</a>
+            </li>
+        </ul>
+
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+}
+
+h1 {
+  font-family: Shrikhand;
+}
+
+h2 {
+  font-family: Roboto;
+}
+
+h3 {
+  font-family: Shrikhand;
+}
+
+/******Header******/
+.top {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  padding: 0px 124px;
+  height: 36px;
+}
+
+/******Main******/
+.center {
+  padding: 152px 228px;
+  background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+}
+
+/******Menus******/
+.card {
+  border-radius: 25px 25px 0px 0px;
+  background: #F6F6F6;
+  margin-top: -45px;
+  padding-bottom: 50px;
+}
+.card__favorite {
+  font-size: xx-large;
+  border: 0px;
+  background: none;
+}
+.card__favorite i {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: -15px;
+}
+.card__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.card h1 {
+  font-size: xx-large;
+}
+.card__str {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card h2 {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+.card h2 .underline {
+  text-decoration: underline solid #99E2D0 3px;
+  text-underline-offset: 15px;
+}
+.card .fa-solid {
+  color: transparent;
+}
+.card .fa-solid:active {
+  color: transparent;
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 35%);
+  -webkit-background-clip: text;
+}
+
+/******Footer******/
+footer {
+  background: var(--Grey, #353535);
+  color: white;
+  padding: 0px 230px 10px 50px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=restaurants.css.map */

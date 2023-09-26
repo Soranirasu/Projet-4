@@ -1,0 +1,128 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$title-police: Shrikhand;
+$text-police: Roboto;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $text-police;
+}
+
+h1 {
+    font-family: $title-police;
+}
+
+h2 {
+    font-family: $text-police;
+}
+
+h3 {
+    font-family: $title-police;
+}
+
+/******Header******/
+.top {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.logo {
+    padding: 0px 124px;
+    height: 36px;
+}
+
+/******Main******/
+.center {
+    padding: 152px 228px;
+    background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+}
+
+/******Menus******/
+
+.card {
+    border-radius: 25px 25px 0px 0px;
+    background: #F6F6F6;
+    margin-top: -45px;
+    padding-bottom: 50px;
+
+    &__favorite {
+        font-size: xx-large;
+        border: 0px;
+        background: none;
+
+        & i {
+            position: absolute;
+            margin-left: -30px;
+            margin-top: -15px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    &__str {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-left: 20px;
+
+        .underline {
+            text-decoration: underline solid $tertiary-color 3px;
+            text-underline-offset: 15px;
+        }
+    }
+
+    .fa-solid {
+        color: transparent;
+
+        &:active {
+            color: transparent;
+            background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 35%);
+            -webkit-background-clip: text;
+
+        }
+
+    }
+}
+
+
+
+
+/******Footer******/
+footer {
+    background: var(--Grey, #353535);
+    color: white;
+    padding: 0px 230px 10px 50px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+}
