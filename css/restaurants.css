@@ -20,10 +20,17 @@ h3 {
 /******Header******/
 .top {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.top a {
+  color: black;
+  font-size: 25px;
 }
 
 .logo {
-  padding: 0px 124px;
+  padding: 0px 92px;
   height: 36px;
 }
 
@@ -75,11 +82,14 @@ h3 {
 }
 .card .fa-solid {
   color: transparent;
-}
-.card .fa-solid:active {
-  color: transparent;
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 35%);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 40%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
+  opacity: 0;
+  transition: 500ms;
+}
+.card .fa-solid:hover {
+  opacity: 1;
+  transition: 500ms;
 }
 .card .buttons {
   display: flex;
@@ -96,9 +106,18 @@ h3 {
   background: white;
   text-decoration: none;
   color: black;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 200ms;
+}
+.card .buttons__str:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.card .buttons__plate {
+  margin: 0px 20px 0px 0px;
 }
 .card .buttons__plate p {
   margin: -15px 0px 15px 0px;
+  font-size: large;
 }
 .card .buttons__price {
   font-family: Shrikhand;
@@ -109,13 +128,14 @@ h3 {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  padding: 15px 45px;
+  padding: 16px 50px;
+  font-size: large;
   font-weight: bold;
   margin-top: 35px;
   transition: all 200ms;
 }
 .card .bouton:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
 }
 

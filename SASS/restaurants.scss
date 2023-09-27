@@ -26,11 +26,19 @@ h3 {
 /******Header******/
 .top {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+
+    a {
+        color: black;
+        font-size: 25px;
+    }
 
 }
 
 .logo {
-    padding: 0px 124px;
+    padding: 0px 92px;
     height: 36px;
 }
 
@@ -88,66 +96,78 @@ h3 {
         }
     }
 
-   
+
 
     .fa-solid {
         color: transparent;
+        background: linear-gradient(180deg, rgba(147, 86, 220, 1) 40%, rgba(255, 121, 218, 1) 100%);
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 500ms;
 
-        &:active {
-            color: transparent;
-            background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 35%);
-            -webkit-background-clip: text;
+        &:hover {
+            opacity: 1;
+            transition: 500ms;
 
         }
 
     }
 
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &__str {
+    .buttons {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: space-between;
-        border-radius: 25px;
-        margin: 12px 10px;
-        padding: 0px 20px;
-        background: white;
-        text-decoration: none;
-        color: black;
 
-    }
+        &__str {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 25px;
+            margin: 12px 10px;
+            padding: 0px 20px;
+            background: white;
+            text-decoration: none;
+            color: black;
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+            transition: box-shadow 200ms;
 
-    &__plate {
-        p {
-            margin: -15px 0px 15px 0px;
+            &:hover {
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        &__plate {
+            margin: 0px 20px 0px 0px;
+
+            p {
+                margin: -15px 0px 15px 0px;
+                font-size: large;
+            }
+        }
+
+        &__price {
+            font-family: $title-police;
         }
     }
 
-    &__price {
-        font-family: $title-police;
-    }
-}
+    .bouton {
+        color: white;
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        padding: 16px 50px;
+        font-size: large;
+        font-weight: bold;
+        margin-top: 35px;
+        transition: all 200ms;
 
-.bouton {
-    color: white;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    border-radius: 25px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    padding: 15px 45px;
-    font-weight: bold;
-    margin-top: 35px;
-    transition: all 200ms;
-
-    &:hover {
-        opacity: 0.8;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
+        }
     }
-}
 
 }
 
@@ -175,4 +195,3 @@ footer {
     }
 
 }
-
