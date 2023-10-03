@@ -102,7 +102,7 @@ h3 {
   justify-content: space-between;
   border-radius: 25px;
   margin: 12px 10px;
-  padding: 0px 20px;
+  padding: 0px 0px 0px 15px;
   background: white;
   text-decoration: none;
   color: black;
@@ -112,15 +112,27 @@ h3 {
 .card .buttons__str:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
-.card .buttons__plate {
-  margin: 0px 20px 0px 0px;
-}
 .card .buttons__plate p {
   margin: -15px 0px 15px 0px;
   font-size: large;
 }
 .card .buttons__price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-family: Shrikhand;
+  margin: 0px 0px 0px -75px;
+}
+.card .buttons__price--check {
+  background: #99E2D0;
+  height: 86px;
+  width: 70px;
+  border-radius: 0px 25px 25px 0px;
+  margin: 0px -20px 0px 0px;
+}
+.card .buttons__price--check i {
+  padding: 30px 0px 0px 20px;
+  font-size: 25px;
 }
 .card .bouton {
   color: white;
