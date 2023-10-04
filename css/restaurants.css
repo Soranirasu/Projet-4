@@ -109,8 +109,37 @@ h3 {
   text-decoration: none;
   color: black;
   overflow: hidden;
+  opacity: 0;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   transition: box-shadow 200ms;
+  animation: apparitions 1500ms forwards;
+}
+.card .buttons__str--1 {
+  animation-delay: 166.6666666667ms;
+}
+.card .buttons__str--2 {
+  animation-delay: 333.3333333333ms;
+}
+.card .buttons__str--3 {
+  animation-delay: 500ms;
+}
+.card .buttons__str--4 {
+  animation-delay: 666.6666666667ms;
+}
+.card .buttons__str--5 {
+  animation-delay: 833.3333333333ms;
+}
+.card .buttons__str--6 {
+  animation-delay: 1000ms;
+}
+.card .buttons__str--7 {
+  animation-delay: 1166.6666666667ms;
+}
+.card .buttons__str--8 {
+  animation-delay: 1333.3333333333ms;
+}
+.card .buttons__str--9 {
+  animation-delay: 1500ms;
 }
 .card .buttons__str:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
@@ -141,14 +170,6 @@ h3 {
   padding: 30px 0px 0px 20px;
   font-size: 25px;
 }
-@keyframes checker {
-  0% {
-    transform: translateX(70px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 .card .bouton {
   color: white;
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
@@ -166,6 +187,24 @@ h3 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
 }
 
+@keyframes checker {
+  0% {
+    transform: translateX(70px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes apparitions {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /******Footer******/
 footer {
   background: var(--Grey, #353535);

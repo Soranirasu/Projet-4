@@ -3,6 +3,8 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $title-police: Shrikhand;
 $text-police: Roboto;
+$anim-duration: 1500ms;
+$anim-delay: $anim-duration / 9;
 
 body {
     display: flex;
@@ -132,8 +134,15 @@ h3 {
             text-decoration: none;
             color: black;
             overflow: hidden;
+            opacity: 0;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             transition: box-shadow 200ms;
+            animation: apparitions $anim-duration forwards;
+            @for $i from 1 through 9 {
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                }
+            }
 
             &:hover {
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
@@ -176,17 +185,6 @@ h3 {
         }
     }
 
-    @keyframes checker {
-        0% {
-            transform: translateX(70px);
-        }
-
-        100% {
-            transform: translateX(0px);
-        }
-
-    }
-
     .bouton {
         color: white;
         background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
@@ -204,7 +202,32 @@ h3 {
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.65);
         }
     }
+}
 
+@keyframes checker {
+    0% {
+        transform: translateX(70px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes apparitions {
+
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+
+    }   
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
 }
 
 
