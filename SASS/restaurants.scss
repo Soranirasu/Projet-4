@@ -120,6 +120,8 @@ h3 {
         justify-content: space-between;
 
         &__str {
+            width: 400px;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -129,6 +131,7 @@ h3 {
             background: white;
             text-decoration: none;
             color: black;
+            overflow: hidden;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             transition: box-shadow 200ms;
 
@@ -150,7 +153,13 @@ h3 {
             align-items: center;
             gap: 15px;
             font-family: $title-police;
-            margin: 0px 0px 0px -75px;
+            margin-right: -70px;
+
+            &:hover {
+                margin-right: 0px;
+                animation: checker 1000ms;
+                transform: translateX(0px)
+            }
 
         }
 
@@ -159,13 +168,23 @@ h3 {
             height: 86px;
             width: 70px;
             border-radius: 0px 25px 25px 0px;
-            margin: 0px -20px 0px 0px;
 
             i {
                 padding: 30px 0px 0px 20px;
                 font-size: 25px;
             }
         }
+    }
+
+    @keyframes checker {
+        0% {
+            transform: translateX(70px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+
     }
 
     .bouton {
