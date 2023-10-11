@@ -144,9 +144,26 @@ h3 {
 .card .buttons__str:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
+.card .buttons__str:hover .buttons__price {
+  margin-right: 0px;
+  animation: checker 1000ms;
+  transform: translateX(0px);
+}
+.card .buttons__plate {
+  overflow: hidden;
+  white-space: nowrap;
+}
 .card .buttons__plate p {
   margin: -15px 0px 15px 0px;
   font-size: large;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card .buttons__plate h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card .buttons__price {
   display: flex;
@@ -154,11 +171,7 @@ h3 {
   gap: 15px;
   font-family: Shrikhand;
   margin-right: -70px;
-}
-.card .buttons__price:hover {
-  margin-right: 0px;
-  animation: checker 1000ms;
-  transform: translateX(0px);
+  margin-left: 10px;
 }
 .card .buttons__price--check {
   background: #99E2D0;

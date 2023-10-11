@@ -138,6 +138,7 @@ h3 {
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             transition: box-shadow 200ms;
             animation: apparitions $anim-duration forwards;
+
             @for $i from 1 through 9 {
                 &--#{$i} {
                     animation-delay: $anim-delay * $i;
@@ -147,13 +148,30 @@ h3 {
             &:hover {
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
             }
+
+            &:hover .buttons__price {
+                margin-right: 0px;
+                animation: checker 1000ms;
+                transform: translateX(0px);
+            }
         }
 
         &__plate {
+            overflow: hidden;
+            white-space: nowrap;
 
             p {
                 margin: -15px 0px 15px 0px;
                 font-size: large;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            h3 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
 
@@ -163,12 +181,7 @@ h3 {
             gap: 15px;
             font-family: $title-police;
             margin-right: -70px;
-
-            &:hover {
-                margin-right: 0px;
-                animation: checker 1000ms;
-                transform: translateX(0px)
-            }
+            margin-left: 10px;
 
         }
 
@@ -221,7 +234,7 @@ h3 {
         transform: translateY(20px);
         opacity: 0;
 
-    }   
+    }
 
     100% {
         transform: translateY(0px);
