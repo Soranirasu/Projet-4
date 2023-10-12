@@ -30,13 +30,14 @@ h3 {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: hsla(0,0%,100%,.9);
+    background-color: hsla(0, 0%, 100%, .9);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 100px;
     animation: load $anim-duration forwards;
+
     @for $i from 1 through 3 {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
@@ -45,20 +46,23 @@ h3 {
 
     i {
         position: absolute;
-        color: $primary-color;
     }
 
     &__icon--1 {
-        animation: icons $anim-delay;
-        
+        opacity: 0;
+        color: $primary-color;
+        animation-delay: 1000ms;
+
     }
 
     &__icon--2 {
         opacity: 0;
+        color: $secondary-color;
     }
 
     &__icon--3 {
         opacity: 0;
+        color: $tertiary-color;
     }
 }
 
@@ -81,7 +85,7 @@ h3 {
     100% {
         opacity: 1;
     }
-    
+
 }
 
 /******Header******/
@@ -172,11 +176,6 @@ main {
             color: grey;
             margin-left: 61px;
             transition: 200ms;
-
-            &:hover {
-                color: $primary-color;
-                transition: 200ms;
-            }
         }
 
         & p {
@@ -187,6 +186,11 @@ main {
 
         &:hover {
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+            transition: 200ms;
+        }
+
+        &:hover i {
+            color: $primary-color;
             transition: 200ms;
         }
 
@@ -336,6 +340,109 @@ footer {
 
     li {
         list-style-type: none;
+    }
+
+}
+
+
+/******Media queries******/
+@media (min-width : 1025px) {
+    main {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0px 732px;
+    }
+
+    .center {
+        &__txt {
+            width: auto;
+        }
+    }
+
+    .fonctionnement {
+        h1 {
+            margin-left: 140px;
+        }
+    }
+
+    .restaurants {
+        h1 {
+            margin-left: 140px;
+        }
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .restaurants-str {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            width: 35%;
+            height: 280px;
+            margin-bottom: 30px;
+
+            &__img {
+                width: 100%;
+                background-size: cover;
+
+                p {
+                    margin: 15px 10px 0px 470px;
+                }
+
+            }
+
+            &__img--1 {
+                background-position-y: -110px;
+            }
+
+            &__img--2 {
+                background-position-y: -290px;
+            }
+
+            &__img--3 {
+                background-position-y: -150px;
+            }
+
+            &__img--4 {
+                background-position-y: -140px;
+            }
+
+
+
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 150px;
+
+        h3 {
+            margin-right: 150px;
+        }
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .no-icon {
+        margin-left: 30px;
     }
 
 }
