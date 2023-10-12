@@ -2,7 +2,7 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $title-police: Shrikhand;
-$anim-duration: 3000ms;
+$anim-duration: 3200ms;
 $anim-delay: $anim-duration / 3;
 
 body {
@@ -51,18 +51,25 @@ h3 {
     &__icon--1 {
         opacity: 0;
         color: $primary-color;
-        animation-delay: 1000ms;
+        animation: icons;
+        animation-duration: 500ms;
 
     }
 
     &__icon--2 {
         opacity: 0;
         color: $secondary-color;
+        animation: icons;
+        animation-delay: 1000ms;
+        animation-duration: 500ms;
     }
 
     &__icon--3 {
         opacity: 0;
         color: $tertiary-color;
+        animation: icons;
+        animation-delay: 2000ms;
+        animation-duration: 500ms;
     }
 }
 
@@ -72,7 +79,7 @@ h3 {
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
         z-index: -1;
     }
 }
@@ -346,7 +353,7 @@ footer {
 
 
 /******Media queries******/
-@media (min-width : 1025px) {
+/*@media (min-width : 1025px) {
     main {
         width: 100%;
     }
@@ -446,3 +453,4 @@ footer {
     }
 
 }
+*/

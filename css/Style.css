@@ -29,16 +29,16 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 100px;
-  animation: load 3000ms forwards;
+  animation: load 3200ms forwards;
 }
 .loader--1 {
-  animation-delay: 1000ms;
+  animation-delay: 1066.6666666667ms;
 }
 .loader--2 {
-  animation-delay: 2000ms;
+  animation-delay: 2133.3333333333ms;
 }
 .loader--3 {
-  animation-delay: 3000ms;
+  animation-delay: 3200ms;
 }
 .loader i {
   position: absolute;
@@ -46,15 +46,22 @@ h3 {
 .loader__icon--1 {
   opacity: 0;
   color: #9356DC;
-  animation-delay: 1000ms;
+  animation: icons;
+  animation-duration: 500ms;
 }
 .loader__icon--2 {
   opacity: 0;
   color: #FF79DA;
+  animation: icons;
+  animation-delay: 1000ms;
+  animation-duration: 500ms;
 }
 .loader__icon--3 {
   opacity: 0;
   color: #99E2D0;
+  animation: icons;
+  animation-delay: 2000ms;
+  animation-duration: 500ms;
 }
 
 @keyframes load {
@@ -62,7 +69,7 @@ h3 {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
     z-index: -1;
   }
 }
@@ -291,77 +298,106 @@ footer li {
 }
 
 /******Media queries******/
-@media (min-width: 1025px) {
-  main {
-    width: 100%;
-  }
-  .logo {
-    padding: 0px 732px;
-  }
-  .center__txt {
-    width: auto;
-  }
-  .fonctionnement h1 {
-    margin-left: 140px;
-  }
-  .restaurants h1 {
-    margin-left: 140px;
-  }
-  .button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-    justify-content: center;
-  }
-  .restaurants-str {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .restaurants-str .card {
-    width: 35%;
-    height: 280px;
-    margin-bottom: 30px;
-  }
-  .restaurants-str .card__img {
-    width: 100%;
-    background-size: cover;
-  }
-  .restaurants-str .card__img p {
-    margin: 15px 10px 0px 470px;
-  }
-  .restaurants-str .card__img--1 {
-    background-position-y: -110px;
-  }
-  .restaurants-str .card__img--2 {
-    background-position-y: -290px;
-  }
-  .restaurants-str .card__img--3 {
-    background-position-y: -150px;
-  }
-  .restaurants-str .card__img--4 {
-    background-position-y: -140px;
-  }
-  footer {
-    width: 100%;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 150px;
-  }
-  footer h3 {
-    margin-right: 150px;
-  }
-  .footer-content {
-    flex-direction: row;
-    gap: 10px;
-  }
-  .no-icon {
-    margin-left: 30px;
-  }
+/*@media (min-width : 1025px) {
+    main {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0px 732px;
+    }
+
+    .center {
+        &__txt {
+            width: auto;
+        }
+    }
+
+    .fonctionnement {
+        h1 {
+            margin-left: 140px;
+        }
+    }
+
+    .restaurants {
+        h1 {
+            margin-left: 140px;
+        }
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .restaurants-str {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            width: 35%;
+            height: 280px;
+            margin-bottom: 30px;
+
+            &__img {
+                width: 100%;
+                background-size: cover;
+
+                p {
+                    margin: 15px 10px 0px 470px;
+                }
+
+            }
+
+            &__img--1 {
+                background-position-y: -110px;
+            }
+
+            &__img--2 {
+                background-position-y: -290px;
+            }
+
+            &__img--3 {
+                background-position-y: -150px;
+            }
+
+            &__img--4 {
+                background-position-y: -140px;
+            }
+
+
+
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 150px;
+
+        h3 {
+            margin-right: 150px;
+        }
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .no-icon {
+        margin-left: 30px;
+    }
+
 }
+*/
 
 /*# sourceMappingURL=Style.css.map */
