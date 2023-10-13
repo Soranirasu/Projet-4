@@ -83,18 +83,16 @@ h3 {
 }
 /******Header******/
 .top {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 0px;
 }
 
 .logo {
-  padding: 0px 124px;
   height: 36px;
 }
 
 /******Main******/
 main {
-  width: 458px;
+  width: 100%;
 }
 
 .location {
@@ -153,16 +151,17 @@ main {
 .button__base {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 0px 30px;
+  padding: 3%;
   transition: box-shadow 200ms;
-  width: 350px;
+  width: 80%;
 }
 .button__base i {
   color: grey;
-  margin-left: 61px;
   transition: 200ms;
+  margin-left: 10%;
 }
 .button__base p {
   margin: 2px 0px 0px 7px;
@@ -181,7 +180,7 @@ main {
   text-decoration: none;
   color: black;
   font-weight: bolder;
-  padding: 15px 80px;
+  margin-right: 10%;
 }
 .button__base--numbers {
   background-color: #9356DC;
@@ -189,7 +188,7 @@ main {
   padding: 4px;
   height: 25px;
   width: 25px;
-  margin: -45px;
+  margin: -35px;
 }
 
 /******Restaurants******/
@@ -211,25 +210,26 @@ main {
   flex-direction: column;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  width: 100%;
 }
 .card a {
   text-decoration: none;
   color: black;
 }
 .card__img {
-  width: 400px;
   height: 200px;
   border-radius: 15px 15px 0px 0px;
-  background-size: 400px 200px;
+  background-size: cover;
 }
 .card__img p {
   background-color: #99E2D0;
   color: green;
   display: flex;
   justify-content: center;
-  margin: 15px 10px 0px 310px;
-  padding: 3px 0px 3px 0px;
   font-weight: 900;
+  width: 30%;
+  margin-left: auto;
+  margin-right: 10px;
 }
 .card__img--1 {
   background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -281,14 +281,16 @@ main {
 footer {
   background: var(--Grey, #353535);
   color: white;
-  padding: 0px 230px 10px 50px;
+  width: 100%;
+}
+footer h3 {
+  padding-left: 40px;
 }
 footer a {
   text-decoration: none;
   color: white;
 }
 footer ul {
-  padding-left: 0px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -298,106 +300,81 @@ footer li {
 }
 
 /******Media queries******/
-/*@media (min-width : 1025px) {
-    main {
-        width: 100%;
-    }
-
-    .logo {
-        padding: 0px 732px;
-    }
-
-    .center {
-        &__txt {
-            width: auto;
-        }
-    }
-
-    .fonctionnement {
-        h1 {
-            margin-left: 140px;
-        }
-    }
-
-    .restaurants {
-        h1 {
-            margin-left: 140px;
-        }
-    }
-
-    .button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 50px;
-        justify-content: center;
-    }
-
-    .restaurants-str {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-        .card {
-            width: 35%;
-            height: 280px;
-            margin-bottom: 30px;
-
-            &__img {
-                width: 100%;
-                background-size: cover;
-
-                p {
-                    margin: 15px 10px 0px 470px;
-                }
-
-            }
-
-            &__img--1 {
-                background-position-y: -110px;
-            }
-
-            &__img--2 {
-                background-position-y: -290px;
-            }
-
-            &__img--3 {
-                background-position-y: -150px;
-            }
-
-            &__img--4 {
-                background-position-y: -140px;
-            }
-
-
-
-        }
-    }
-
-    footer {
-        width: 100%;
-        padding: 30px 0px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 150px;
-
-        h3 {
-            margin-right: 150px;
-        }
-    }
-
-    .footer-content {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .no-icon {
-        margin-left: 30px;
-    }
-
+@media (min-width: 1025px) {
+  main {
+    width: 100%;
+  }
+  .logo {
+    padding: 0px 732px;
+  }
+  .center__txt {
+    width: auto;
+  }
+  .fonctionnement h1 {
+    margin-left: 140px;
+  }
+  .restaurants h1 {
+    margin-left: 140px;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+  }
+  .button__base {
+    padding: 1%;
+    width: 23%;
+  }
+  .button__base i {
+    margin-left: 10%;
+  }
+  .restaurants-str {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .restaurants-str .card {
+    width: 35%;
+    height: 280px;
+    margin-bottom: 30px;
+  }
+  .restaurants-str .card__img {
+    width: 100%;
+    background-size: cover;
+  }
+  .restaurants-str .card__img--1 {
+    background-position-y: -110px;
+  }
+  .restaurants-str .card__img--2 {
+    background-position-y: -290px;
+  }
+  .restaurants-str .card__img--3 {
+    background-position-y: -150px;
+  }
+  .restaurants-str .card__img--4 {
+    background-position-y: -140px;
+  }
+  footer {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+  }
+  footer h3 {
+    margin-right: 150px;
+  }
+  .footer-content {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .no-icon {
+    margin-left: 30px;
+  }
 }
-*/
 
 /*# sourceMappingURL=Style.css.map */

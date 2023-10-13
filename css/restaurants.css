@@ -255,71 +255,55 @@ footer li {
 }
 
 /******Media queries******/
-/*@media (min-width : 1025px) {
-    main {
-        width: 100%;
-    }
-
-    .logo {
-        padding: 0px 702px;
-    }
-
-    .center--1 {
-        background-position-y: -500px;
-    }
-
-    .center--2 {
-        background-position-y: -600px;
-    }
-
-    .center--3 {
-        background-position-y: -1050px;
-    }
-
-    .center--4 {
-        background-position-y: -530px;
-    }
-
-    .card {
-        width: 85%;
-        margin-left: 90px;
-
-        .buttons {
-             &__str {
-                width: 800px;
-             }
-        }
-    }
-
-    footer {
-        width: 100%;
-        padding: 0px;
-    }
-
-    footer {
-        width: 100%;
-        padding: 30px 0px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 150px;
-
-        h3 {
-            margin-right: 150px;
-        }
-    }
-
-    .footer-content {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .no-icon {
-        margin-left: 30px;
-    }
-
+@media (min-width: 1025px) {
+  main {
+    width: 100%;
+  }
+  .logo {
+    padding: 0px 702px;
+  }
+  .center--1 {
+    background-position-y: -500px;
+  }
+  .center--2 {
+    background-position-y: -600px;
+  }
+  .center--3 {
+    background-position-y: -1050px;
+  }
+  .center--4 {
+    background-position-y: -530px;
+  }
+  .card {
+    width: 85%;
+    margin-left: 90px;
+  }
+  .card .buttons__str {
+    width: 800px;
+  }
+  footer {
+    width: 100%;
+    padding: 0px;
+  }
+  footer {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+  }
+  footer h3 {
+    margin-right: 150px;
+  }
+  .footer-content {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .no-icon {
+    margin-left: 30px;
+  }
 }
-*/
 
 /*# sourceMappingURL=restaurants.css.map */
