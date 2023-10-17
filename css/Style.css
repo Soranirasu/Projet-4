@@ -220,6 +220,7 @@ main {
   height: 200px;
   border-radius: 15px 15px 0px 0px;
   background-size: cover;
+  background-position-y: bottom;
 }
 .card__img p {
   background-color: #99E2D0;
@@ -236,6 +237,7 @@ main {
 }
 .card__img--2 {
   background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-position-y: 60%;
 }
 .card__img--3 {
   background-image: url(../Assets/Images+et+textes+Ohmyfood/Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
