@@ -11,10 +11,7 @@ h1 {
 
 h2 {
   font-family: Roboto;
-}
-
-h3 {
-  font-family: Shrikhand;
+  font-weight: 300;
 }
 
 /******Header******/
@@ -187,6 +184,7 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 300;
 }
 .card .buttons__plate h3 {
   overflow: hidden;
@@ -197,7 +195,8 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
-  font-family: Shrikhand;
+  font-family: Roboto;
+  font-weight: 600;
   margin-right: -70px;
   margin-left: 10px;
   transition: 1s;
@@ -247,6 +246,7 @@ footer {
 }
 footer h3 {
   padding-left: 40px;
+  font-family: Shrikhand;
 }
 footer a {
   text-decoration: none;

@@ -5,18 +5,6 @@ body {
   font-family: Roboto;
 }
 
-h1 {
-  font-family: Shrikhand;
-}
-
-h2 {
-  font-family: Shrikhand;
-}
-
-h3 {
-  font-family: Shrikhand;
-}
-
 /******Loader******/
 .loader {
   z-index: 100;
@@ -101,6 +89,9 @@ main {
   background-color: var(--Grey-2, #EAEAEA);
   font-weight: bold;
 }
+.location p {
+  font-weight: 500;
+}
 
 .fa-location-dot {
   padding: 17px 15px 0px 0px;
@@ -113,6 +104,7 @@ main {
 }
 .center p {
   margin-bottom: 50px;
+  font-weight: 200;
 }
 .center__txt {
   width: 275px;
@@ -256,6 +248,7 @@ main {
 }
 .card__content p {
   margin: 0px 0px 10px 0px;
+  font-weight: 200;
 }
 .card__favorite {
   font-size: xx-large;
@@ -287,6 +280,7 @@ footer {
 }
 footer h3 {
   padding-left: 40px;
+  font-family: Shrikhand;
 }
 footer a {
   text-decoration: none;

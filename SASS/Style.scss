@@ -12,18 +12,6 @@ body {
     font-family: Roboto;
 }
 
-h1 {
-    font-family: $title-police;
-}
-
-h2 {
-    font-family: $title-police;
-}
-
-h3 {
-    font-family: $title-police;
-}
-
 /******Loader******/
 .loader {
     z-index: 100;
@@ -115,6 +103,10 @@ main {
     justify-content: center;
     background-color: var(--Grey-2, #EAEAEA);
     font-weight: bold;
+
+    p {
+        font-weight: 500;
+    }
 }
 
 
@@ -130,6 +122,7 @@ main {
 
     p {
         margin-bottom: 50px;
+        font-weight: 200;
     }
 
     &__txt {
@@ -296,6 +289,7 @@ main {
 
         p {
             margin: 0px 0px 10px 0px;
+            font-weight: 200;
         }
     }
 
@@ -337,6 +331,7 @@ footer {
 
     h3 {
         padding-left: 40px;
+        font-family: $title-police;
     }
 
     a {

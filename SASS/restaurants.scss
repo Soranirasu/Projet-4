@@ -19,10 +19,7 @@ h1 {
 
 h2 {
     font-family: $text-police;
-}
-
-h3 {
-    font-family: $title-police;
+    font-weight: 300;
 }
 
 /******Header******/
@@ -196,6 +193,7 @@ main {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                font-weight: 300;
             }
 
             h3 {
@@ -209,7 +207,8 @@ main {
             display: flex;
             align-items: center;
             gap: 15px;
-            font-family: $title-police;
+            font-family: $text-police;
+            font-weight: 600;
             margin-right: -70px;
             margin-left: 10px;
             transition: 1s;
@@ -272,6 +271,7 @@ footer {
 
     h3 {
         padding-left: 40px;
+        font-family: $title-police;
     }
 
     a {
