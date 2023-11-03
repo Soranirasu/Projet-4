@@ -109,10 +109,10 @@ main {
   text-underline-offset: 15px;
 }
 .card .fa-solid {
-  color: transparent;
+  color: white;
   background: linear-gradient(180deg, rgb(147, 86, 220) 40%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
-  opacity: 0;
+  opacity: 1;
   transition: 500ms;
 }
 .card .fa-solid:hover {

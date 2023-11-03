@@ -131,10 +131,10 @@ main {
 
 
     .fa-solid {
-        color: transparent;
+        color: white;
         background: linear-gradient(180deg, rgba(147, 86, 220, 1) 40%, rgba(255, 121, 218, 1) 100%);
         -webkit-background-clip: text;
-        opacity: 0;
+        opacity: 1;
         transition: 500ms;
 
         &:hover {
