@@ -242,7 +242,7 @@ main {
     }
 
     &__img {
-        height: 200px;
+        height: 210px;
         border-radius: 15px 15px 0px 0px;
         background-size: cover;
         background-position-y: bottom;
@@ -411,24 +411,6 @@ footer {
                 width: 100%;
                 background-size: cover;
             }
-
-            &__img--1 {
-                background-position-y: -110px;
-            }
-
-            &__img--2 {
-                background-position-y: -290px;
-            }
-
-            &__img--3 {
-                background-position-y: -150px;
-            }
-
-            &__img--4 {
-                background-position-y: -140px;
-            }
-
-
 
         }
     }

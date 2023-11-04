@@ -209,7 +209,7 @@ main {
   color: black;
 }
 .card__img {
-  height: 200px;
+  height: 210px;
   border-radius: 15px 15px 0px 0px;
   background-size: cover;
   background-position-y: bottom;
@@ -339,18 +339,6 @@ footer li {
   .restaurants-str .card__img {
     width: 100%;
     background-size: cover;
-  }
-  .restaurants-str .card__img--1 {
-    background-position-y: -110px;
-  }
-  .restaurants-str .card__img--2 {
-    background-position-y: -290px;
-  }
-  .restaurants-str .card__img--3 {
-    background-position-y: -150px;
-  }
-  .restaurants-str .card__img--4 {
-    background-position-y: -140px;
   }
   footer {
     width: 100%;
